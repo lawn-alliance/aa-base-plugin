@@ -11,7 +11,7 @@ To install this plugin into your AA project run this command within your virtual
 ## Installation
 
 ```bash
-pip install git+
+pip install git+https://gitlab.com/ErikKalkoken/allianceauth-example-plugin
 ```
 
 ## Development
