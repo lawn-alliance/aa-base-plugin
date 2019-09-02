@@ -1,14 +1,18 @@
 # Example plugin app for Alliance Auth
 
-This is an example plugin app for [Alliance Auth](https://gitlab.com/allianceauth/allianceauth) (AA) that can be used as starting point to develop your own custom plugins.
+This is an example plugin app for [Alliance Auth](https://gitlab.com/allianceauth/allianceauth) (AA) that can be used as starting point to develop custom plugins.
 
-The plugin can be installed, upgraded and removed into an existing AA installation using PyInstaller.
+![License](https://img.shields.io/badge/license-MIT-green) ![python](https://img.shields.io/badge/python-3.5-informational) ![django](https://img.shields.io/badge/django-2.2-informational)
 
-It shows a browsable table with the all the countries of the world and can be accessed through its own menu item on the sidebar.
+## Features
 
-To install this plugin into your AA project run this command within your virtual Python environment of AA:
+- The plugin can be installed, upgraded and removed into an existing AA installation using PyInstaller.
+
+- It shows a browsable table with the all the countries of the world and can be accessed through its own menu item on the sidebar.
 
 ## Installation
+
+To install this plugin into your AA project run this command within your virtual Python environment of AA:
 
 ```bash
 pip install git+https://gitlab.com/ErikKalkoken/allianceauth-example-plugin
