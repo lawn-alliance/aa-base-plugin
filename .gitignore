@@ -1,0 +1,15 @@
+*.log
+*.tmp
+*.bak
+*.old
+__pycache__
+.vscode/
+devonly/
+dist/
+build/
+winauth/
+log/
+alliance_auth.sqlite3
+__init__.py
+supervisor.conf
+manage.py
