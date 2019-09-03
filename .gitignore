@@ -11,6 +11,6 @@ winauth/
 log/
 *.egg-info/
 alliance_auth.sqlite3
-__init__.py
+/__init__.py
 supervisor.conf
 manage.py
