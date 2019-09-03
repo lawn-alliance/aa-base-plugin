@@ -9,8 +9,8 @@ class ExampleMenuItem(MenuItemHook):
     def __init__(self):
         MenuItemHook.__init__(
             self,
-            _('Example Plugin'),
-            'fa fa-globe fa-fw',
+            _('example'),
+            'fa fa-cube fa-fw',
             'example:index',
             navactive=['example:index']
         )
