@@ -7,6 +7,7 @@ from . import urls
 class ExampleMenuItem(MenuItemHook):
     """ This class ensures only authorized users will see the menu entry """
     def __init__(self):
+        # setup menu entry for sidebar
         MenuItemHook.__init__(
             self,
             _('example'),

@@ -8,7 +8,7 @@ This is an example plugin app for [Alliance Auth](https://gitlab.com/allianceaut
 
 - The plugin can be installed, upgraded and removed into an existing AA installation using PyInstaller.
 
-- The app can be accessed through a menu item in the sidebar.
+- It has it's own menu item in the sidebar.
 
 - It has one view that shows a table with dummy data retrieved from an API.
 
