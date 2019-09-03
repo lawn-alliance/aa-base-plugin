@@ -54,10 +54,10 @@ Location | Description
 /example/templates/example/ | folder name
 /example/__init__.py | app name
 /example/apps.py | app name
-/example/auth_hooks.py | menu hook
+/example/auth_hooks.py | menu hook config incl. icon and label of your app's menu item appearing in the sidebar
 /example/urls.py | app name
 /example/views.py | permission name and template path
-/example/templates/example/base.html | app titles on view
+/example/templates/example/base.html | Title of your app to be shown in all views and as title in the browser tab
 /example/templates/example/index.html | template path
 /.gitignore | path of files to include / exclude for git
 /MANIFEST.IN | path of files to include / exclude for PyInstaller
