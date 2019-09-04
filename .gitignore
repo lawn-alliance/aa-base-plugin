@@ -4,6 +4,7 @@
 *.old
 __pycache__
 .vscode/
+venv/
 devonly/
 dist/
 build/
