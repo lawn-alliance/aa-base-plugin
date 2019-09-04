@@ -18,7 +18,7 @@ setup(
     description='Example plugin app for Alliance Auth',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='xxx',
+    url='https://gitlab.com/ErikKalkoken/allianceauth-example-plugin',
     author='Erik Kalkoken',
     author_email='erik.kalkoken@gmail.com',
     classifiers=[
