@@ -4,21 +4,17 @@ This is an example plugin app for [Alliance Auth](https://gitlab.com/allianceaut
 
 ![License](https://img.shields.io/badge/license-MIT-green) ![python](https://img.shields.io/badge/python-3.5-informational) ![django](https://img.shields.io/badge/django-2.2-informational)
 
-## What it can do
+## Features
 
-- The plugin can be installed, upgraded and removed into an existing AA installation using PyInstaller.
+- The plugin can be installed, upgraded (and removed) into an existing AA installation using PyInstaller.
 
 - It has it's own menu item in the sidebar.
 
 - It has one view that shows a table with dummy data retrieved from an API.
 
-## How to install it
+Here is a screenshot of the installed example plugin:
 
-To test install this example plugin into your AA dev project run this command within your virtual Python environment of AA:
-
-```bash
-pip install git+https://gitlab.com/ErikKalkoken/allianceauth-example-plugin
-```
+![Example app](https://i.imgur.com/Pe7FZPS.png)
 
 ## How to use it
 
@@ -40,7 +36,7 @@ myauth/
 |- supervisor.conf
 ```
 
-Note that your PyInstaller files, license and readme need to be in the same folder, so this can look a bit messy. However, with well configured  `.gitignore` and `MANIFESTR.in` this works fine. The ones provided in the repo only needs to be adjusted to your new app name and the name of your auth project.
+Note that your PyInstaller files, license and readme need to be in the same folder, so this can look a bit messy. However, with well configured  `.gitignore` and `MANIFEST.in` this works fine. The ones provided in the repo only needs to be adjusted to your new app name and the name of your auth project.
 
 ### Renaming the app
 
@@ -87,4 +83,30 @@ python manage.py migrate
 
 Finally restart your AA server and that's it.
 
-> **Final note** <br>If you made a new app for AA please consider sharing it with the rest of the community. For any questions on how to share your app please contact the AA devs on their Discord. You find the current community creations [here](https://gitlab.com/allianceauth/community-creations).
+## Installing into production AA
+
+To install your plugin into a production AA run this command within the virtual Python environment of your AA installation:
+
+```bash
+pip install git+https://gitlab.com/ErikKalkoken/allianceauth-example-plugin
+```
+
+> **Note**:<br> Make sure to replace the above URL with your own repo. Nevertheless, this URL will work if you just want to install the example plugin.
+
+Alternatively you can create a package file and manually deliver it to your production AA:
+
+```bash
+python setup.py sdist
+```
+
+And then install it directly from the package file
+
+```bash
+pip install your-package-app.tar.gz
+```
+
+Then add your app to `INSTALLED_APPS` in `settings/local.py`, run migrations and restart your allianceserver.
+
+## Contribute
+
+If you made a new app for AA please consider sharing it with the rest of the community. For any questions on how to share your app please contact the AA devs on their Discord. You find the current community creations [here](https://gitlab.com/allianceauth/community-creations).
