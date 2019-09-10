@@ -48,7 +48,7 @@ Location | Description
 -- | --
 /example/ | folder name
 /example/templates/example/ | folder name
-/example/__init__.py | app name
+`/example/__init__.py` | app name
 /example/apps.py | app name
 /example/auth_hooks.py | menu hook config incl. icon and label of your app's menu item appearing in the sidebar
 /example/urls.py | app name
