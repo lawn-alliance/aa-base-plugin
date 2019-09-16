@@ -64,6 +64,15 @@ Location | Description
 /MANIFEST.IN | path of files to include / exclude for PyInstaller
 /setup.py | package name
 
+## Clearing migrations
+
+Instead of renaming your app in the migrations its easier to just recreate them later in the process. For this to work you need to delete the old migration files in your migrations folder.
+
+```bash
+rm your-app-name/migrations/0001_initial.py
+rm -rf your-app-name/migrations/_pycache
+```
+
 ## Installing into your dev AA
 
 Once you have cloned or copied all files into place and finished renaming the app you are ready to install it to your dev AA instance.
@@ -75,6 +84,12 @@ pip install -e allianceauth-your-app-name
 ```
 
 First add your app to the Django project by adding the name of your app to INSTALLED_APPS in `settings/local.py`.
+
+Next we will create new migrations for your app:
+
+```bash
+python manage.py makemigrations
+```
 
 Then run a check to see if everything is setup correctly.
 
