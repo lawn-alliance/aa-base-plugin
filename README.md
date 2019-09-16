@@ -62,7 +62,7 @@ Location | Description
 /example/templates/example/index.html | template path
 /.gitignore | path of files to include / exclude for git
 /MANIFEST.IN | path of files to include / exclude for PyInstaller
-/setup.py | package name
+/setup.py | package name, version import from package
 
 ## Clearing migrations
 
