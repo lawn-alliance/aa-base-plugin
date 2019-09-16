@@ -3,4 +3,4 @@ include README.md
 recursive-include example *.py
 recursive-include example/static *
 recursive-include example/templates *
-recursive-exclude winauth *
+

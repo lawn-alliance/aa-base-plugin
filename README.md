@@ -18,29 +18,34 @@ Here is a screenshot of the installed example plugin:
 
 ## How to use it
 
-To use this example as basis for your own development, fork this repo and clone it into on your dev machine.
+To use this example as basis for your own development just fork this repo and then clone it on your dev machine.
 
-### Folder structure
+You then should rename the app and then you can install it into your AA dev installation.
 
-For this app to work within the Django project the package folder (e.g. "example") needs to be in the same folder as your `manage.py` file.
+### Cloning from repo
+
+For this app we are assuming that you have all your AA projects, your virtual environement and your AA installation under one top folder (e.g. aa-dev).
 
 This should look something like this:
 
 ```plain
-myauth/
-|- example/
+aa-dev
+|- venv/
 |- myauth/
-|- log
-|- __init__.py
-|- manage.py
-|- supervisor.conf
+|- allianceauth-example-plugin
+|- (other AA projects ...)
+
 ```
 
-Note that your PyInstaller files, license and readme need to be in the same folder, so this can look a bit messy. However, with well configured  `.gitignore` and `MANIFEST.in` this works fine. The ones provided in the repo only needs to be adjusted to your new app name and the name of your auth project.
+Then just cd into the top folder (e.g. aa-dev) and clone the repo from your fork:
+
+```bash
+git clone https://gitlab.com/YourName/allianceauth-example-plugin.git
+```
 
 ### Renaming the app
 
-> **Important** <br>Before installing this app into your dev AA you should rename it to something suitable for your development project. Otherwise you risk not being able to install additional apps that might also be called example.
+Before installing this app into your dev AA you need to rename it to something suitable for your development project. Otherwise you risk not being able to install additional apps that might also be called example.
 
 Here is an overview of the places that you need to edit to adopt the name.
 
@@ -59,13 +64,17 @@ Location | Description
 /MANIFEST.IN | path of files to include / exclude for PyInstaller
 /setup.py | package name
 
-> **Note** <br>You can also do a full text search for the keyword "example" in the source files to find most of them.
-
-### Installing into your dev AA
+## Installing into your dev AA
 
 Once you have cloned or copied all files into place and finished renaming the app you are ready to install it to your dev AA instance.
 
-First add your app to the Django project by adding a string with the name of your app to INSTALLED_APPS in `settings/local.py`.
+Make sure you are in your venv. Then install it with pip in editable mode:
+
+```bash
+pip install -e allianceauth-your-app-name
+```
+
+First add your app to the Django project by adding the name of your app to INSTALLED_APPS in `settings/local.py`.
 
 Then run a check to see if everything is setup correctly.
 
@@ -88,10 +97,8 @@ Finally restart your AA server and that's it.
 To install your plugin into a production AA run this command within the virtual Python environment of your AA installation:
 
 ```bash
-pip install git+https://gitlab.com/ErikKalkoken/allianceauth-example-plugin
+pip install git+https://gitlab.com/YourName/allianceauth-your-app-name
 ```
-
-> **Note**:<br> Make sure to replace the above URL with your own repo. Nevertheless, this URL will work if you just want to install the example plugin.
 
 Alternatively you can create a package file and manually deliver it to your production AA:
 

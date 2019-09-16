@@ -4,14 +4,6 @@
 *.old
 __pycache__
 .vscode/
-venv/
-devonly/
 dist/
 build/
-winauth/
-log/
 *.egg-info/
-alliance_auth.sqlite3
-/__init__.py
-supervisor.conf
-manage.py
