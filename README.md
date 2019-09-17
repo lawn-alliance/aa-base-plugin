@@ -53,16 +53,17 @@ Location | Description
 -- | --
 /example/ | folder name
 /example/templates/example/ | folder name
-`/example/__init__.py` | app name
+/setup.py | update modeul name for version import, update package name, update title, author, etc.
+/MANIFEST.IN | path of files to include / exclude for PyInstaller
 /example/apps.py | app name
+`/example/__init__.py` | app name
 /example/auth_hooks.py | menu hook config incl. icon and label of your app's menu item appearing in the sidebar
+/example/models.py | app name
 /example/urls.py | app name
 /example/views.py | permission name and template path
 /example/templates/example/base.html | Title of your app to be shown in all views and as title in the browser tab
 /example/templates/example/index.html | template path
-/.gitignore | path of files to include / exclude for git
-/MANIFEST.IN | path of files to include / exclude for PyInstaller
-/setup.py | package name, version import from package
+/README.md | clear content
 
 ## Clearing migrations
 
