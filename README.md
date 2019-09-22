@@ -37,10 +37,14 @@ aa-dev
 
 ```
 
-Then just cd into the top folder (e.g. aa-dev) and clone the repo from your fork:
+Then just cd into the top folder (e.g. aa-dev) and clone the repo from your fork. You can give the repo a new name right away (e.g. `allianceauth-your-app-name`).
+You also want to create a new git repo for it.
 
 ```bash
-git clone https://gitlab.com/YourName/allianceauth-example-plugin.git
+git clone https://gitlab.com/YourName/allianceauth-example-plugin.git allianceauth-your-app-name
+cd allianceauth-your-app-name
+rm -rf .git
+git init
 ```
 
 ### Renaming the app
