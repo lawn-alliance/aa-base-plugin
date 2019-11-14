@@ -33,10 +33,14 @@ aa-dev
 
 ```
 
-Then just cd into the top folder (e.g. aa-dev) and clone the repo from your fork:
+Then just cd into the top folder (e.g. aa-dev) and clone the repo from your fork. You can give the repo a new name right away (e.g. `allianceauth-your-app-name`).
+You also want to create a new git repo for it.
 
 ```bash
-git clone https://gitlab.com/YourName/allianceauth-example-plugin.git
+git clone https://gitlab.com/YourName/allianceauth-example-plugin.git allianceauth-your-app-name
+cd allianceauth-your-app-name
+rm -rf .git
+git init
 ```
 
 ### Renaming the app
@@ -45,11 +49,13 @@ Before installing this app into your dev AA you need to rename it to something s
 
 Here is an overview of the places that you need to edit to adopt the name.
 
+Easiest is to just find & replace `example` with `your_app_name` in all files listed below.
+
 Location | Description
 -- | --
 /example/ | folder name
 /example/templates/example/ | folder name
-/setup.py | update modeul name for version import, update package name, update title, author, etc.
+/setup.py | update modul name for version import, update package name, update title, author, etc.
 /MANIFEST.IN | path of files to include / exclude for PyInstaller
 /example/apps.py | app name
 `/example/__init__.py` | app name
@@ -60,6 +66,7 @@ Location | Description
 /example/templates/example/base.html | Title of your app to be shown in all views and as title in the browser tab
 /example/templates/example/index.html | template path
 /README.md | clear content
+/LICENSE | Replace with your own license
 
 ## Clearing migrations
 
