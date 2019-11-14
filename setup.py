@@ -1,6 +1,8 @@
 import os 
 from setuptools import find_packages, setup
+
 from example import __version__
+
 
 # read the contents of your README file
 this_directory = os.path.abspath(os.path.dirname(__file__))
@@ -18,10 +20,9 @@ setup(
     license='MIT',
     description='Example plugin app for Alliance Auth',
     long_description=long_description,
-    long_description_content_type='text/markdown',
-    url='https://gitlab.com/ErikKalkoken/allianceauth-example-plugin',
-    author='Erik Kalkoken',
-    author_email='erik.kalkoken@gmail.com',
+    long_description_content_type='text/markdown',    
+    author='John Doe',
+    author_email='john.doe@example.com',
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
@@ -33,8 +34,5 @@ setup(
         'Programming Language :: Python :: 3.5',        
         'Topic :: Internet :: WWW/HTTP',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
-    ],
-    install_requires=[
-        "requests"
     ]
 )

@@ -4,47 +4,22 @@
 
 {% block details %}
 
-    <table class="table" id="tab_example">
-        <thead>
-            <tr>
-                <th>Flag</th>
-                <th>Name</th>
-                <th>Native Name</th>
-                <th>Capital</th>
-                <th>Region</th>
-                <th>Sub Region</th>
-                <th>Population</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for country in countries %}
-                <tr>
-                    <td><img src="{{ country.flag }}" style="width: 50px; height: 30px"/></td>
-                    <td>{{ country.name }}</td>
-                    <td>{{ country.nativeName }}</td>
-                    <td>{{ country.capital }}</td>
-                    <td>{{ country.region }}</td>
-                    <td>{{ country.subregion }}</td>
-                    <td style="text-align: right">{{ country.population|intcomma }}</td>
-                </tr>
-            {% endfor %}
-        </tbody>        
-        
-    </table>
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">text</h3>            
+        </div>
+        <div class="panel-body" style="min-height: 100px;">  
+            {{ text }}
+        </div>
+    </div>
     
 {% endblock %}
 
-{% block extra_javascript %}
-    {% include 'bundles/datatables-js.html' %}    
-    
+{% block extra_javascript %}    
 {% endblock %}
 
-{% block extra_css %}
-    {% include 'bundles/datatables-css.html' %}    
+{% block extra_css %}    
 {% endblock %}
 
-{% block extra_script %}
-    $(document).ready(function(){
-        $('#tab_example').DataTable();       
-    });
+{% block extra_script %}    
 {% endblock %}

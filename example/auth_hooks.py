@@ -1,6 +1,8 @@
-from allianceauth.services.hooks import MenuItemHook, UrlHook
 from django.utils.translation import ugettext_lazy as _
+
+from allianceauth.services.hooks import MenuItemHook, UrlHook
 from allianceauth import hooks
+
 from . import urls
 
 
@@ -17,7 +19,7 @@ class ExampleMenuItem(MenuItemHook):
         )
 
     def render(self, request):
-        if request.user.has_perm('example.example'):
+        if request.user.has_perm('example.basic_access'):
             return MenuItemHook.render(self, request)
         return ''
 
