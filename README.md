@@ -2,7 +2,7 @@
 
 This is an example plugin app for [Alliance Auth](https://gitlab.com/allianceauth/allianceauth) (AA) that can be used as starting point to develop custom plugins.
 
-![License](https://img.shields.io/badge/license-MIT-green) ![python](https://img.shields.io/badge/python-3.5-informational) ![django](https://img.shields.io/badge/django-2.2-informational)
+![License](https://img.shields.io/badge/license-MIT-green) ![python](https://img.shields.io/badge/python-3.6-informational) ![django](https://img.shields.io/badge/django-3.1-informational)
 
 ## Features
 
@@ -49,7 +49,7 @@ Before installing this app into your dev AA you need to rename it to something s
 
 Here is an overview of the places that you need to edit to adopt the name.
 
-Easiest is to just find & replace `example` with your new app name in all files listed below. 
+Easiest is to just find & replace `example` with your new app name in all files listed below.
 
 One small warning about picking names: Python is a bit particular about what special characters are allowed for names of modules and packages. To avoid any pitfalls I would therefore recommend to use only normal characters (a-z) in your app's name unless you know exactly what you are doing.
 
