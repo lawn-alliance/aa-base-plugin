@@ -14,7 +14,7 @@ class ExampleMenuItem(MenuItemHook):
         MenuItemHook.__init__(
             self,
             _("example"),
-            "fa fa-cube fa-fw",
+            "fas fa-cube fa-fw",
             "example:index",
             navactive=["example:"],
         )
