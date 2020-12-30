@@ -2,7 +2,7 @@
 
 This is an example plugin app for [Alliance Auth](https://gitlab.com/allianceauth/allianceauth) (AA) that can be used as starting point to develop custom plugins.
 
-![License](https://img.shields.io/badge/license-MIT-green) ![python](https://img.shields.io/badge/python-3.6-informational) ![django](https://img.shields.io/badge/django-3.1-informational)
+![License](https://img.shields.io/badge/license-MIT-green) ![python](https://img.shields.io/badge/python-3.6-informational) ![django](https://img.shields.io/badge/django-3.1-informational) ![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)
 
 ## Features
 
@@ -34,13 +34,14 @@ aa-dev
 ```
 
 Then just cd into the top folder (e.g. aa-dev) and clone the repo from your fork. You can give the repo a new name right away (e.g. `allianceauth-your-app-name`).
-You also want to create a new git repo for it.
+You also want to create a new git repo for it. Finally, enable [pre-commit](https://pre-commit.com) to enable automatic code style checking.
 
 ```bash
 git clone https://gitlab.com/YourName/allianceauth-example-plugin.git allianceauth-your-app-name
 cd allianceauth-your-app-name
 rm -rf .git
 git init
+pre-commit install
 ```
 
 ### Renaming the app
@@ -55,20 +56,23 @@ One small warning about picking names: Python is a bit particular about what spe
 
 Location | Description
 -- | --
-/example/ | folder name
-/example/templates/example/ | folder name
-/setup.py | update modul name for version import, update package name, update title, author, etc.
-/MANIFEST.IN | path of files to include / exclude for PyInstaller
-/example/apps.py | app name
+`/example/` | folder name
+`/example/templates/example/` | folder name
+`/setup.py` | update module name for version import, update package name, update title, author, etc.
+`/MANIFEST.IN` | path of files to include / exclude for PyInstaller
+`/example/apps.py` | app name
 `/example/__init__.py` | app name
-/example/auth_hooks.py | menu hook config incl. icon and label of your app's menu item appearing in the sidebar
-/example/models.py | app name
-/example/urls.py | app name
-/example/views.py | permission name and template path
-/example/templates/example/base.html | Title of your app to be shown in all views and as title in the browser tab
-/example/templates/example/index.html | template path
-/README.md | clear content
-/LICENSE | Replace with your own license
+`/example/auth_hooks.py` | menu hook config incl. icon and label of your app's menu item appearing in the sidebar
+`/example/models.py` | app name
+`/example/urls.py` | app name
+`/example/views.py` | permission name and template path
+`/example/templates/example/base.html` | Title of your app to be shown in all views and as title in the browser tab
+`/example/templates/example/index.html` | template path
+`/testauth/settings.py` | app name
+`/.coveragerc` | app name
+`/README.md` | clear content
+`/LICENSE` | Replace with your own license
+`/tox.ini` | app name
 
 ## Clearing migrations
 
