@@ -1,3 +1,3 @@
-from django.contrib import admin  # noqa: F401
+# from django.contrib import admin
 
-# Register your models here.
+# Register your models for the admin site here.

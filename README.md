@@ -2,15 +2,17 @@
 
 This is an example plugin app for [Alliance Auth](https://gitlab.com/allianceauth/allianceauth) (AA) that can be used as starting point to develop custom plugins.
 
-![License](https://img.shields.io/badge/license-MIT-green) ![python](https://img.shields.io/badge/python-3.6-informational) ![django](https://img.shields.io/badge/django-3.1-informational) ![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-green)
+![python](https://img.shields.io/badge/python-3.6-informational)
+![django](https://img.shields.io/badge/django-3.1-informational)
+![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)
 
 ## Features
 
 - The plugin can be installed, upgraded (and removed) into an existing AA installation using PyInstaller.
-
 - It has it's own menu item in the sidebar.
-
 - It has one view that shows a panel and some text
+- Comes with CI pipeline pre-configured
 
 ## How to use it
 
@@ -20,7 +22,7 @@ You then should rename the app and then you can install it into your AA dev inst
 
 ### Cloning from repo
 
-For this app we are assuming that you have all your AA projects, your virtual environement and your AA installation under one top folder (e.g. aa-dev).
+For this app we are assuming that you have all your AA projects, your virtual environnement and your AA installation under one top folder (e.g. aa-dev).
 
 This should look something like this:
 
