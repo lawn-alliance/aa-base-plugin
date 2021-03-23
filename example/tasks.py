@@ -1,8 +1,8 @@
-import logging
-
 from celery import shared_task
 
-logger = logging.getLogger(__name__)
+from allianceauth.services.hooks import get_extension_logger
+
+logger = get_extension_logger(__name__)
 
 # Create your tasks here
 
