@@ -3,8 +3,6 @@
 This is an example plugin app for [Alliance Auth](https://gitlab.com/allianceauth/allianceauth) (AA) that can be used as starting point to develop custom plugins.
 
 ![License](https://img.shields.io/badge/license-MIT-green)
-![python](https://img.shields.io/badge/python-3.6-informational)
-![django](https://img.shields.io/badge/django-3.1-informational)
 ![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)
 
 ## Features
@@ -60,8 +58,7 @@ Location | Description
 -- | --
 `/example/` | folder name
 `/example/templates/example/` | folder name
-`/setup.py` | update module name for version import, update package name, update title, author, etc.
-`/MANIFEST.IN` | path of files to include / exclude for PyInstaller
+`/pyproject.toml` | update module name for version import, update package name, update title, author, etc.
 `/example/apps.py` | app name
 `/example/__init__.py` | app name
 `/example/auth_hooks.py` | menu hook config incl. icon and label of your app's menu item appearing in the sidebar
@@ -70,7 +67,7 @@ Location | Description
 `/example/views.py` | permission name and template path
 `/example/templates/example/base.html` | Title of your app to be shown in all views and as title in the browser tab
 `/example/templates/example/index.html` | template path
-`/testauth/settings.py` | app name
+`/testauth/settings/local.py` | app name
 `/.coveragerc` | app name
 `/README.md` | clear content
 `/LICENSE` | Replace with your own license
