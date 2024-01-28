@@ -118,7 +118,7 @@ Finally restart your AA server and that's it.
 
 ## Running the test suite
 
-This example app comes with a pre-configured test suite based on tox.
+This example app comes with a pre-configured test suite based on [tox](https://tox.wiki/en/).
 
 First you need to install tox into your local Python environment:
 
