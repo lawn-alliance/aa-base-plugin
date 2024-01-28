@@ -4,8 +4,7 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "allianceauth-example-plugin"
-dynamic = ["version"]
-description = "Example plugin app for Alliance Auth"
+dynamic = ["version", "description"]
 readme = "README.md"
 license = {file = "LICENSE"}
 requires-python = ">=3.8"
