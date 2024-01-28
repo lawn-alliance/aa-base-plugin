@@ -1,10 +1,10 @@
-from django.db import models
+"""Models."""
 
-# Create your models here.
+from django.db import models
 
 
 class General(models.Model):
-    """Meta model for app permissions"""
+    """A meta model for app permissions."""
 
     class Meta:
         managed = False

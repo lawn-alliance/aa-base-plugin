@@ -116,6 +116,40 @@ python manage.py migrate
 
 Finally restart your AA server and that's it.
 
+## Running the test suite
+
+This example app comes with a pre-configured test suite based on [tox](https://tox.wiki/en/).
+
+First you need to install tox into your local Python environment:
+
+```sh
+pip install tox
+```
+
+Then you can run the test suite for a specific environment with:
+
+```sh
+tox -e py311-django40
+```
+
+You can use this command to see all configured test environments:
+
+```sh
+tox -l
+```
+
+## Pylint linter
+
+The [pylint](https://pylint.readthedocs.io/en/stable/) linter is also pre-configured. Pylint is a popular linter that checks your app for common bugs, unidiomatic python code and makes suggestions for refactoring.
+
+You can run the linter manually with:
+
+```sh
+tox -e pylint
+```
+
+To enable the linter to run as part of your CI pipeline you must uncomment the respective lines in `.gitlab-ci.yml`.
+
 ## Installing into production AA
 
 To install your plugin into a production AA run this command within the virtual Python environment of your AA installation:
@@ -127,7 +161,7 @@ pip install git+https://gitlab.com/YourName/allianceauth-your-app-name
 Alternatively you can create a package file and manually deliver it to your production AA:
 
 ```bash
-python setup.py sdist
+python -m build
 ```
 
 And then install it directly from the package file
