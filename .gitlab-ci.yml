@@ -15,6 +15,13 @@ pre-commit:
     - pip install pre-commit
     - pre-commit run --all-files
 
+# pylint:
+#   stage: checks
+#   extends: .tox_setup
+#   image: python:3.10-bullseye
+#   script:
+#   - tox -e pylint
+
 .tox_setup:
   before_script:
     - apt-get update

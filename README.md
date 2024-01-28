@@ -138,6 +138,18 @@ You can use this command to see all configured test environments:
 tox -l
 ```
 
+## Pylint linter
+
+The [pylint](https://pylint.readthedocs.io/en/stable/) linter is also pre-configured. Pylint is a popular linter that checks your app for common bugs, unidiomatic python code and makes suggestions for refactoring.
+
+You can run the linter manually with:
+
+```sh
+tox -e pylint
+```
+
+To enable the linter to run as part of your CI pipeline you must uncomment the respective lines in `.gitlab-ci.yml`.
+
 ## Installing into production AA
 
 To install your plugin into a production AA run this command within the virtual Python environment of your AA installation:

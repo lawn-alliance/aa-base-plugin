@@ -10,4 +10,3 @@ logger = get_extension_logger(__name__)
 @shared_task
 def my_task():
     """An example task."""
-    pass
