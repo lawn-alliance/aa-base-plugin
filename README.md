@@ -1,9 +1,8 @@
-# Example plugin app for Alliance Auth 2
+# Example plugin app for Alliance Auth - LAWN Version
 
 This is an example plugin app for [Alliance Auth](https://gitlab.com/allianceauth/allianceauth) (AA) that can be used as starting point to develop custom plugins.
-
-![License](https://img.shields.io/badge/license-MIT-green)
-![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)
+It is a modified version of [allianceauth-example-plugin](https://gitlab.com/ErikKalkoken/allianceauth-example-plugin), that has been modified to hold our preffered setup.
+The instructions have been modified to fit our use case.
 
 ## Features
 
@@ -14,7 +13,7 @@ This is an example plugin app for [Alliance Auth](https://gitlab.com/allianceaut
 
 ## How to use it
 
-To use this example as basis for your own development just fork this repo and then clone it on your dev machine.
+To use this example as basis for your own development just clone it on your dev machine.
 
 You then should rename the app and then you can install it into your AA dev installation.
 
@@ -33,7 +32,7 @@ aa-dev
 
 ```
 
-Then just cd into the top folder (e.g. aa-dev) and clone the repo from your fork. You can give the repo a new name right away (e.g. `allianceauth-your-app-name`).
+Then just cd into the top folder (e.g. aa-dev) and clone the repo. You can give the repo a new name right away (e.g. `allianceauth-your-app-name`).
 You also want to create a new git repo for it. Finally, enable [pre-commit](https://pre-commit.com) to enable automatic code style checking.
 
 ```bash
