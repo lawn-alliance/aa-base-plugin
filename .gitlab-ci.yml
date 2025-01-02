@@ -15,12 +15,12 @@ pre-commit:
     - pip install pre-commit
     - pre-commit run --all-files
 
-# pylint:
-#   stage: checks
-#   extends: .tox_setup
-#   image: python:3.10-bookworm
-#   script:
-#   - tox -e pylint
+pylint:
+  stage: checks
+  extends: .tox_setup
+  image: python:3.10-bookworm
+  script:
+  - tox -e pylint
 
 .tox_setup:
   before_script:
@@ -30,31 +30,19 @@ pre-commit:
     - python -V
     - pip install tox
 
-test-py38-dj40:
-  extends: .tox_setup
-  image: python:3.8-bookworm
-  script:
-    - tox -e py38-django40
-
-test-py39-dj40:
+test-py39-dj42:
   extends: .tox_setup
   image: python:3.9-bookworm
   script:
     - tox -e py39-django40
 
-test-py310-dj40:
+test-py310-dj42:
   extends: .tox_setup
   image: python:3.10-bookworm
   script:
     - tox -e py310-django40
     - bash <(curl -s https://codecov.io/bash)
 
-test-py311-dj40:
-  extends: .tox_setup
-  image: python:3.11-bookworm
-  script:
-  - tox -e py311-django40
-  - bash <(curl -s https://codecov.io/bash)
 
 test-py311-dj42:
   extends: .tox_setup

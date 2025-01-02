@@ -3,7 +3,7 @@
 from django.db import models
 
 
-class General(models.Model):
+class AABasePlugin(models.Model):
     """A meta model for app permissions."""
 
     class Meta:

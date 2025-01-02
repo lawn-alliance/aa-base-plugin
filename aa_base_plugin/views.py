@@ -5,8 +5,8 @@ from django.shortcuts import render
 
 
 @login_required
-@permission_required("example.basic_access")
+@permission_required("aa_base_plugin.basic_access")
 def index(request):
     """Render index view."""
     context = {"text": "Hello, World!"}
-    return render(request, "example/index.html", context)
+    return render(request, "aa_base_plugin/index.html", context)
