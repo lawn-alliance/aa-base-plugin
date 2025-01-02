@@ -1,4 +1,4 @@
-# Example plugin app for Alliance Auth
+# Example plugin app for Alliance Auth 2
 
 This is an example plugin app for [Alliance Auth](https://gitlab.com/allianceauth/allianceauth) (AA) that can be used as starting point to develop custom plugins.
 
