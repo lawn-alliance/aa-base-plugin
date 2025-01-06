@@ -39,7 +39,7 @@ Changelog = "https://gitlab.com/ErikKalkoken/allianceauth-example-plugin/-/blob/
 Tracker = "https://gitlab.com/ErikKalkoken/allianceauth-example-plugin/-/issues"
 
 [tool.flit.module]
-name = "example"
+name = "aa_base_plugin"
 
 [tool.isort]
 profile = "black"
