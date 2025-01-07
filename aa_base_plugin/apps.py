@@ -6,4 +6,4 @@ from django.utils.translation import gettext_lazy as _
 class ExampleConfig(AppConfig):
     name = "aa_base_plugin"
     label = "aa_base_plugin"
-    verbose_name = f"AA Base Plugin v{__version__}"
+    verbose_name = _(f"AA Base Plugin v{__version__}")
