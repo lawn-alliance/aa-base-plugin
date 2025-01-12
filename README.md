@@ -49,7 +49,7 @@ Before installing this app into your dev AA you need to rename it to something s
 
 Here is an overview of the places that you need to edit to adopt the name.
 
-Easiest is to just find & replace `aa_base_plugin` `aa-base-plugin` or various other combinations, with your new app name in all files listed below.
+Easiest is to just find & replace `aa_base_plugin` `aa-base-plugin` `aa base plugin` or various other combinations, with your new app name in all files listed below.
 
 One small warning about picking names: Python is a bit particular about what special characters are allowed for names of modules and packages. To avoid any pitfalls I would therefore recommend to use only normal characters (a-z) in your app's name unless you know exactly what you are doing.
 

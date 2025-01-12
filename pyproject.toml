@@ -50,16 +50,16 @@ sections = [
     "DJANGO",
     "ALLIANCEAUTH",
     "FIRSTPARTY",
-    "LOCALFOLDER"
+    "LOCALFOLDER",
 ]
 known_allianceauth = [ "allianceauth", "app_utils", "esi", "eveuniverse" ]
-known_django = [ "django"]
+known_django = [ "django" ]
 known_third_party = [ "requests", "solo" ]
-import_heading_stdlib= "Standard Library"
-import_heading_django= "Django"
-import_heading_allianceauth= "Alliance Auth"
-import_heading_firstparty= "AA Fleet Pings"
-import_heading_thirdparty= "Third Party"
+import_heading_stdlib = "Standard Library"
+import_heading_django = "Django"
+import_heading_allianceauth = "Alliance Auth"
+import_heading_firstparty = "AA Base Plugin"
+import_heading_thirdparty = "Third Party"
 
 [tool.pylint.'MASTER']
 ignore-patterns = [ "__init__.py", "auth_hooks.py", "apps.py", "admin.py" ]
