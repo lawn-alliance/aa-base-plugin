@@ -1,16 +1,16 @@
 [build-system]
-requires = [ "flit_core >=3.2,<4" ]
 build-backend = "flit_core.buildapi"
+
+requires = [ "flit-core>=3.2,<4" ]
 
 [project]
 name = "aa-base-plugin"
-dynamic = ["version", "description"]
 readme = "README.md"
-license = {file = "LICENSE"}
-requires-python = ">=3.9"
+license = { file = "LICENSE" }
 authors = [
     { name = "John Doe", email = "john.doe@example.com" },
 ]
+requires-python = ">=3.9"
 classifiers = [
     "Environment :: Web Environment",
     "Framework :: Django",
@@ -20,22 +20,25 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Topic :: Internet :: WWW/HTTP",
     "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
 ]
+dynamic = [ "description", "version" ]
 dependencies = [
     "allianceauth>=4",
 ]
 
-
-urls.Changelog = "https://gitlab.com/ErikKalkoken/allianceauth-example-plugin/-/blob/master/CHANGELOG.md"
-urls.Documentation = "https://allianceauth-example-plugin.readthedocs.io/en/latest/"
-urls.Homepage = "https://gitlab.com/ErikKalkoken/allianceauth-example-plugin"
-urls.Source = "https://gitlab.com/ErikKalkoken/allianceauth-example-plugin"
-urls.Tracker = "https://gitlab.com/ErikKalkoken/allianceauth-example-plugin/-/issues"
+urls.Changelog = "https://gitlab.com/lawn-alliance/aa-base-plugin/-/blob/master/CHANGELOG.md"
+urls.Documentation = "https://gitlab.com/lawn-alliance/aa-base-plugin/-/blob/master/README.md"
+urls.Homepage = "https://gitlab.com/lawn-alliance/aa-base-plugin"
+urls.Source = "https://gitlab.com/lawn-alliance/aa-base-plugin"
+urls.Tracker = "https://gitlab.com/lawn-alliance/aa-base-plugin/-/issues"
 
 [tool.flit.module]
 name = "aa_base_plugin"

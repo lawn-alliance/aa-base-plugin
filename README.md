@@ -145,4 +145,3 @@ You can run the linter manually with:
 ```sh
 tox -e pylint
 ```
-
