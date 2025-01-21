@@ -1,7 +1,9 @@
 """Tasks."""
 
+# Third Party
 from celery import shared_task
 
+# Alliance Auth
 from allianceauth.services.hooks import get_extension_logger
 
 logger = get_extension_logger(__name__)

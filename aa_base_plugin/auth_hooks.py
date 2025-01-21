@@ -1,8 +1,9 @@
+# Alliance Auth
 from allianceauth import hooks
 from allianceauth.services.hooks import MenuItemHook, UrlHook
 
+# AA Base Plugin
 from aa_base_plugin import __title__
-
 
 from . import urls
 

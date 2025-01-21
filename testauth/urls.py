@@ -1,6 +1,5 @@
 # Django
-from django.urls import path
-from django.urls import include
+from django.urls import include, path
 
 # Alliance Auth
 from allianceauth import urls
