@@ -82,7 +82,7 @@ repos:
           (?x)(
             .gitlab/|
             static/(.*)/libs/|
-            README.md
+            README.*\.md
           )
         args:
           - --disable=MD013
