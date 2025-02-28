@@ -9,7 +9,7 @@ from celery.app import trace
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "testauth.settings.local")
 
 # Django
-from django.conf import settings  # noqa
+from django.conf import settings  # noqa: E402
 
 app = Celery("testauth")
 

@@ -53,23 +53,23 @@ Easiest is to just find & replace `aa_base_plugin` `aa-base-plugin` `aa base plu
 
 One small warning about picking names: Python is a bit particular about what special characters are allowed for names of modules and packages. To avoid any pitfalls I would therefore recommend to use only normal characters (a-z) in your app's name unless you know exactly what you are doing.
 
-Location | Description
--- | --
-`/aa_base_plugin/` | folder name
-`/aa_base_plugin/templates/aa_base_plugin/` | folder name
-`/pyproject.toml` | update module name for version import, update package name, update title, author, etc.
-`/aa_base_plugin/apps.py` | app name
-`/aa_base_plugin/__init__.py` | app name
-`/aa_base_plugin/auth_hooks.py` | menu hook config incl. icon and label of your app's menu item appearing in the sidebar
-`/aa_base_plugin/models.py` | app name
-`/aa_base_plugin/urls.py` | app name
-`/aa_base_plugin/views.py` | permission name and template path
-`/aa_base_plugin/templates/aa_base_plugin/base.html` | Title of your app to be shown in all views and as title in the browser tab
-`/aa_base_plugin/templates/aa_base_plugin/index.html` | template path
-`/testauth/settings/local.py` | app name
-`/.coveragerc` | app name
-`/README.md` | clear content
-`/tox.ini` | app name
+| Location                                              | Description                                                                            |
+| ----------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| `/aa_base_plugin/`                                    | folder name                                                                            |
+| `/aa_base_plugin/templates/aa_base_plugin/`           | folder name                                                                            |
+| `/pyproject.toml`                                     | update module name for version import, update package name, update title, author, etc. |
+| `/aa_base_plugin/apps.py`                             | app name                                                                               |
+| `/aa_base_plugin/__init__.py`                         | app name                                                                               |
+| `/aa_base_plugin/auth_hooks.py`                       | menu hook config incl. icon and label of your app's menu item appearing in the sidebar |
+| `/aa_base_plugin/models.py`                           | app name                                                                               |
+| `/aa_base_plugin/urls.py`                             | app name                                                                               |
+| `/aa_base_plugin/views.py`                            | permission name and template path                                                      |
+| `/aa_base_plugin/templates/aa_base_plugin/base.html`  | Title of your app to be shown in all views and as title in the browser tab             |
+| `/aa_base_plugin/templates/aa_base_plugin/index.html` | template path                                                                          |
+| `/testauth/settings/local.py`                         | app name                                                                               |
+| `/.coveragerc`                                        | app name                                                                               |
+| `/README.md`                                          | clear content                                                                          |
+| `/tox.ini`                                            | app name                                                                               |
 
 ## Clearing migrations
 

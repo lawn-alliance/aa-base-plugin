@@ -10,6 +10,9 @@ exclude_lines =
     if __name__ == .__main__.:
 ignore_errors = True
 omit =
-    */tests/*
+    setup.py
+    */tests.py
+    */tests/*.py
     */migrations/*
-    docs/*
+    doc/*
+    */scripts/*

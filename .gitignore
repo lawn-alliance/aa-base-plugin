@@ -3,6 +3,7 @@
 *.bak
 *.old
 __pycache__
+node_modules/
 .vscode/
 .idea/
 dist/
