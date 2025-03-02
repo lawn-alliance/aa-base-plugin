@@ -36,7 +36,7 @@ Then just cd into the top folder (e.g. aa-dev) and clone the repo. You can give 
 You also want to create a new git repo for it. Finally, enable [pre-commit](https://pre-commit.com) to enable automatic code style checking.
 
 ```bash
-git clone https://gitlab.com/lawn-alliance/aa-base-plugin.git your-app-name
+git clone https://github.com/astrum-mechanica/aa-base-plugin.git your-app-name
 cd your-app-name
 rm -rf .git
 git init
