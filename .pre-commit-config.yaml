@@ -139,7 +139,7 @@ repos:
 #          - globals@15.14.0  # https://github.com/sindresorhus/globals/releases/latest
 
   - repo: https://github.com/thibaudcolas/pre-commit-stylelint
-    rev: adbd5eb765476b51bf2d2621a7492053153a4d06  # frozen: v16.14.1
+    rev: 1a160bc61f659e8f9071d6ae8b5f5fce98ce7898  # frozen: v16.15.0
     hooks:
       - id: stylelint
         name: Stylelint
@@ -273,7 +273,7 @@ repos:
         description: Format the tox.ini file.
 
   - repo: https://github.com/tox-dev/pyproject-fmt
-    rev: 6b2f3b33754de7a442043dc312fc5a0e473086d2  # frozen: v2.5.0
+    rev: 57b6ff7bf72affdd12c7f3fd6de761ba18a33b3a  # frozen: v2.5.1
     hooks:
       - id: pyproject-fmt
         name: pyproject.toml formatter
